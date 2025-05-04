@@ -4,13 +4,13 @@ pipeline {
 		nodejs 'NodeJS'
 	}
 	environment {
-		DOCKER_HUB_REPO = 'iquantc/iquant-app'
+		DOCKER_HUB_REPO = 'ramesh2005/ramesh2005'
 		DOCKER_HUB_CREDENTIALS_ID = 'gitops-dockerhub'
 	}
 	stages {
 		stage('Checkout Github'){
 			steps {
-			git branch: 'main', credentialsId: 'GitOps-token-GitHub', url: 'https://github.com/iQuantC/Jenkins-ArgoCD-GitOps.git'
+			git branch: 'main', credentialsId: 'GitOps-token-GitHub', url: 'https://github.com/Ramesh9949/signance_project_02.git'
 			}
 		}		
 		stage('Install node dependencies'){
